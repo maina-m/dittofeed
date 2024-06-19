@@ -33,8 +33,8 @@ services:
       # uncomment while upgrading dittofeed
       # BOOTSTRAP: "false"
     # README: To add local env variables uncomment the following line and add a .env file in the root directory
-    # env_file:
-    #   - .env
+     env_file:
+       - .env
     networks:
       - dittofeed-network-lite
   # useful for upgrading dittofeed
@@ -51,8 +51,8 @@ services:
     environment:
       <<: *backend-app-env
     # README: To add local env variables uncomment the following line and add a .env file in the root directory
-    # env_file:
-    #   - .env
+     env_file:
+       - .env
     networks:
       - dittofeed-network-lite
   temporal:
